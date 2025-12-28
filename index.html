@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <h1 class="app-title">
+            <i class="fa-solid fa-wallet"></i>
+            Group Expense Splitter
+        </h1>
+
+        <!-- ADD MEMBER -->
+        <div class="card">
+            <h2><i class="fa-solid fa-user-plus"></i> Add Member</h2>
+
+            <div class="form-row">
+                <input type="text" id="memberName" placeholder="Enter member name">
+                <button onclick="handleAddMember()">
+                    <i class="fa-solid fa-plus"></i> Add
+                </button>
+            </div>
+
+            <ul id="memberList" class="list"></ul>
+        </div>
+
+        <!-- ADD EXPENSE -->
+<div class="card">
+    <h2><i class="fa-solid fa-receipt"></i> Add Expense</h2>
+
+    <select id="paidBy" class="placeholder">
+        <option value="" disabled selected hidden>
+            Select member who paid
+        </option>
+    </select>
+    
+    <input type="number" id="amount" placeholder="Amount (₹)">
+
+    <button class="primary-btn" onclick="handleAddExpense()">
+        <i class="fa-solid fa-plus"></i> Add Expense
+    </button>
+
+    <ul id="expenseList" class="list"></ul>
+</div>
+
+
+        <!-- CALCULATE -->
+        <button class="calculate-btn" onclick="runApp()">
+            <i class="fa-solid fa-calculator"></i> Calculate Settlement
+        </button>
+
+        <!-- OUTPUT -->
+        <div id="output" class="results-container"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f2f4f7;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button i {
+  margin-right: 6px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+}
+
+.form-row button {
+  background: #10b981;
+  color: white;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: #111827;
+  color: white;
+  margin-top: 10px;
+}
+
+.list {
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #374151;
+}
+
+.list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.results-container {
+  margin-top: 25px;
+}
+
+.result-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.result-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.result-item {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.icon-btn {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.icon-btn:hover {
+  opacity: 0.7;
+}
+
+input[type="number"] {
+  transition: border 0.2s;
+}
+
+select.placeholder {
+  color: #9ca3af; /* soft grey */
+}
+
+select {
+  color: #111827; /* normal text */
+}
+
+.card select {
+  margin-bottom: 12px;
+}
